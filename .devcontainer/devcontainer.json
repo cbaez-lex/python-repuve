@@ -34,10 +34,10 @@
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [5000],
+	"forwardPorts": [8888],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install -r requirements.txt",
+	"postCreateCommand": "pip3 install -r requirements.txt",
 
 	// Comment out to connect as root instead.
 	"remoteUser": "vscode"

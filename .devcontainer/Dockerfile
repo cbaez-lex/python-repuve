@@ -16,3 +16,7 @@ RUN if ! cat /etc/group | grep -e "^pip-global:" > /dev/null 2>&1; then groupadd
 RUN pip install -U pip
 #RUN pip install --no-cache-dir numpy~=1.17.5 tensorflow~=2.0.2 flask~=1.1.2 pillow~=7.2.0
 #RUN pip install --no-cache-dir mscviplib==2.200731.16
+RUN sudo apt-get update
+RUN sudo apt-get install ffmpeg libsm6 libxext6  -y
+RUN sudo apt install tesseract-ocr -y
+RUN sudo apt install libtesseract-dev -y
